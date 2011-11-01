@@ -1,5 +1,5 @@
 
-# basament.js
+# basement.js
 v0.01
 
 javascript testing mini framework
