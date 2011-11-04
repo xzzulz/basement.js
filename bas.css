@@ -87,13 +87,30 @@ h3 {
 	font: 18px Verdana, sans-serif;
 	color: #84b3ff;
 }
-
+a.get_link:link {
+	color: #84b3ff;
+	text-decoration: none;
+}
+a.get_link:visited {
+	color: #84b3ff;
+	text-decoration: none;
+}
+a.get_link:active {
+	color: #84b3ff;
+	text-decoration: none;
+}
+a.get_link:hover {
+	color: #99c8ff;
+	text-decoration: none;
+}
 #content {
 	position: absolute;
-	left: 0px;
+	width: 800px;
+	left: 50%;
+	margin-left: -400px;
 	top: 280px;
 	bottom: 0px;
-	right: 0px;
+	min-height: 300px;
 }
 
 #descrip {
