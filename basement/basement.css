@@ -45,7 +45,7 @@ h2 {
 	top: 12px;
 	left: 20px;
 	font: bold 14px Verdana;
-	color: #262d1b;
+	color: #d9e3a4;
 }
 #title_box {
 	position: absolute;
@@ -60,7 +60,7 @@ h2 {
 	top: 5px;
 	right: 195px;
 	font: bold 13px Verdana;
-	color: #262d1b;
+	color: #758335;
 }
 
 #label_failed {
@@ -68,7 +68,7 @@ h2 {
 	top: 5px;
 	right: 72px;
 	font: bold 13px Verdana;
-	color: #262d1b;
+	color: #758335;
 }
 
 #tests_passed {
@@ -241,4 +241,10 @@ h2 {
 	box-shadow: #a54653 4px 4px 0px;
 	border-radius: 5px;
 	
+}
+.check .comment {
+	color: #e1f3c0;
+	padding-left: 20px;
+
+
 }
