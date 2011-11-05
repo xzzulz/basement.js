@@ -21,8 +21,15 @@ var basement = function() {
 		$('#title_box').text( title )
 		
 		// clear the view from previous tests
-		//$( view.tests_box ).
-		// @todo
+		$( view.tests_box  ).empty()
+		
+		// reset counters
+		tests_count = 0
+		passed_tests = 0
+		failed_tests = 0
+		
+		// update view counters
+		view.update_counters()
 	}
 	
 	
@@ -36,7 +43,7 @@ var basement = function() {
 	
 	// create a new test
 	// return the test object
-	pub.new = function( name, descrip ) {
+	pub.test = function( name, descrip ) {
 				
 		tests_count++
 		passed_tests++
