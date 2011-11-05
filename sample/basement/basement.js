@@ -94,7 +94,7 @@ var basement = function() {
 		check: function( label, bool, descrip ) { 
 						
 			this.checks.push( bool )
-			view.add_check( label, bool, descrip )
+			view.add_check( label, bool, descrip, this.id )
 			
 			this.update_status( bool )
 			return this 
@@ -162,10 +162,12 @@ var basement = function() {
 
 
 	// views 
-	view.test = '<div>'
+	view.test = '<div id="{test.id}_box">'
+	+ '<div>'
 	+ '<div class="test_id">{test.id}</div>'
 	+ '<div id="{test.id}" class="test">{test.name}'
 	+ '<div class="descrip">{test.descrip}</div>'
+	+ '</div>'
 	+ '</div>'
 	+ '</div>'
 	
@@ -182,11 +184,12 @@ var basement = function() {
 	
 
 
-	
+	var html
 	// add a test to the view
 	view.add_test = function( test ) {
 				
-		var html = view.test
+		html = view.test
+			.replace( '{test.id}', test.id )
 			.replace( '{test.id}', test.id )
 			.replace( '{test.id}', test.id )
 			.replace( '{test.name}', test.name )
@@ -211,13 +214,13 @@ var basement = function() {
 		
 	}
 
-
+	var id_box// , html
 	// add a check to the view
-	view.add_check = function( label, bool, descrip ) {
+	view.add_check = function( label, bool, descrip, id ) {
 		
 		if( ! descrip ) descrip = ''
 		
-		var html = view.check
+		html = view.check
 			.replace( "{name}", label )
 			.replace( "{name}", label )
 			.replace( "{check.comment}", descrip )
@@ -226,8 +229,10 @@ var basement = function() {
 			html = html.replace( '{res}', view.check_ok )
 		else
 			html = html.replace( '{res}', view.check_fail )
-			
-		$( html ).appendTo( view.tests_box )
+		
+		//$( html ).appendTo( view.tests_box )
+		id_box = $( '#' + id + '_box' )
+		$( html ).appendTo( id_box )
 	}
 	
 	
