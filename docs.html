@@ -61,7 +61,15 @@
 
 		<h2>Writing the tests: test.js</h2>
 
-
+		<p>All your tests code, should be placed in the "test.js" file.
+		This file should contain these things:</p>
+		<ul>
+			<li>Start a set of tests.</li>
+			<li>Connect the "test" button to trigger execution of tests.</li>
+			<li>Create any number of tests.</li>
+			<li>On each test, perform any number of checks.</li>
+		</ul>
+		
 
 		<h3>Start a set</h3>
 
@@ -81,6 +89,25 @@
 				<span class="parent">)</span>
 			</div>
 		</div>
+
+		<h3>Connect the "test" button</h3>
+
+		<p>The view has a "test" button that triggers the execution of tests.
+		To connect the test button in the view, to executing your test in the
+		"test.js" file,	assign a callback function to the corresponding 
+		property.</p>
+
+		<div class="code">
+			<div class="line">
+				<span class="basament">basement</span>
+				<span class="method">.test_click</span>
+				<span class="parent">=</span>
+				<span class="string"> exe_tests_function </span>
+			</div>
+		</div>
+		
+		<p>When the test button is pressed, your callback function will be 
+		called. </p>
 		
 		<h3>Create a test</h3>
 		
@@ -141,6 +168,7 @@
 		being created and checks are performed.</p>
 
 
+		
 
 		<h2>Basement Reference</h2>
 
@@ -153,6 +181,10 @@
 		<h4>basement.set( title )</h4>
 			<div class="def">Set the top bar title for the html view. Removes any tests result
 			from the html view. Reset the test results counters to zero.</div>
+
+		<h4>basement.test_click</h4>
+			<div class="def">Assign a function to this property, that will be 
+			called when the "test" button in the view is clicked.</div>
 
 
 		<h4><div>basement.test( test_name )</div>
