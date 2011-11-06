@@ -36,18 +36,18 @@ h4 {
 	right: 0px;
 	height: 80px;
 	
-	background-image: linear-gradient(bottom, #263c0f 100%, #6a9a36 0%);
-	background-image: -o-linear-gradient(bottom, #263c0f 100%, #6a9a36 0%);
-	background-image: -moz-linear-gradient(bottom, #263c0f 100%, #6a9a36 0%);
-	background-image: -webkit-linear-gradient(bottom, #263c0f 100%, #6a9a36 0%);
-	background-image: -ms-linear-gradient(bottom, #263c0f 100%, #6a9a36 0%);
+	background-image: linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
 
 	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(1, #263c0f),
-		color-stop(0, #6a9a36)
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(106,154,54)),
+	color-stop(1, rgb(38,60,15))
 	);
 }
 
@@ -58,19 +58,19 @@ h4 {
 	right: 0px;
 	height: 16px;
 	
-	background-image: linear-gradient(bottom, #293121 100%, #879c73 0%);
-	background-image: -o-linear-gradient(bottom, #293121 100%, #879c73 0%);
-	background-image: -moz-linear-gradient(bottom, #293121 100%, #879c73 0%);
-	background-image: -webkit-linear-gradient(bottom, #293121 100%, #879c73 0%);
-	background-image: -ms-linear-gradient(bottom, #293121 100%, #879c73 0%);
+	background-image: linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
 
 	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(1, #293121),
-		color-stop(0, #879c73)
-	);
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(135,156,115)),
+	color-stop(1, rgb(41,49,33))
+);
 }
 
 #doc {
