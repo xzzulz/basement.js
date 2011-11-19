@@ -2,10 +2,12 @@
 # basement.js
 v1.0
 
-javascript testing lab
+minimalist javascript testing library with html view.
 
-[basement](http://nzonbi.github.com/basement.js)
+## goal
+basement.js is a very simple way to add tests to javascript projects.
 
-basement is a simple testing library for javascript, with a nice html view.
+## project webpage
+Visit project webpage: [nzonbi.github.com/basement.js](http://nzonbi.github.com/basement.js) for documentation and online examples.
 
-Visit [basement](http://nzonbi.github.com/basement.js) for documentation and an example.
+MIT license.
