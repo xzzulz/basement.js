@@ -1,3 +1,4 @@
+![deathspeak](http://www.ozkeebo.com/stuff/img/basement.js.svg)
 
 # basement.js
 v1.0
