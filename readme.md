@@ -1,4 +1,4 @@
-![basement.js](http://www.ozkeebo.com/stuff/img/basementjs.png)
+![basement.js](http://nzonbi.github.io/basement/img/basement01.png)
 
 # basement.js
 v1.0
