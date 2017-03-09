@@ -1,14 +1,14 @@
-![basement.js](http://nzonbi.github.io/basement.js/img/basement01.png)
+![basement.js](http://lignixz.github.io/basement.js/img/basement01.png)
 
 # basement.js
-v1.0
+v1.1
 
-minimalist javascript testing library with html view.
+minimal javascript tests, in browser with html view.
 
 ## goal
-basement.js is a very simple way to add tests to javascript projects.
+Basement.js is an extremely simple way to add tests to web apps. The test are run and viewed in a webpage.
 
 ## project webpage
-Visit project webpage: [nzonbi.github.com/basement.js](http://nzonbi.github.com/basement.js) for documentation and online examples.
+Visit project webpage: [lignixz.github.com/basement.js](http://lignixz.github.com/basement.js) for documentation and online examples.
 
 MIT license.
