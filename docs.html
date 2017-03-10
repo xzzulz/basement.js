@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+
 	<meta charset="utf-8" />
-	
+
 	<title>basement.js docs</title>
 	<meta name="description" content="basement.js - documentation - setup - examples - reference"/>
-	
+
 	<link type="text/css" href="res/bas_docs.css" rel="stylesheet" />
 
-<link rel="shortcut icon"
- href="http://nzonbi.github.com/basement.js/favicon.ico" />
-		
-<script type="text/javascript">
+	<link rel="icon" href="http://lignixz.github.com/basement.js/basementIcon.png" />
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26915473-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>		
 </head>
 <body>
 
 
 	<div id="menu_box">
-		
+
 		<div id="menu_bk"></div>
 		<div id="shape1" class="link_shape"></div>
 		<div id="shape2" class="link_shape"></div>
@@ -38,11 +24,11 @@
 
 <div id="link1"><a class="blue_link" href="index.html">basement.js</a></div>
 <div id="link2"><a class="blue_link" href="docs.html">docs</a></div>
-<div id="link3"><a class="blue_link" href="http://github.com/nzonbi/basement.js">download on github</a></div>
+<div id="link3"><a class="blue_link" href="http://github.com/lignixz/basement.js">download on github</a></div>
 
 	</div>
-	
-	
+
+
 
 	<div id="doc">
 
@@ -53,25 +39,25 @@
 		html view.</p>
 
 		<p>Basement.js consist of a javascript object, and an html & css view.
-		The basament object can create any number of "test objects".</p>
+		The basement object can create any number of "test objects".</p>
 
-		<p>Each test object represent a javascript test. It can perform any 
+		<p>Each test object represent a javascript test. It can perform any
 		number of boolean expression checks. Each check done is
-		reported in the html view. If all checks are passed, the test is 
+		reported in the html view. If all checks are passed, the test is
 		passed.</p>
 
 
 		<h2>Basement Setup</h2>
 
 
-		<p>The simpler setup for basament tests, is to create a "test" folder
-		in the javascript project to be tested. Inside of it, place a "test.js" file 
-		with the tests to be performed. Along place the basement "index.html" and 
+		<p>The simpler setup for basement tests, is to create a "test" folder
+		in the javascript project to be tested. Inside of it, place a "test.js" file
+		with the tests to be performed. Along place the basement "index.html" and
 		the "basement" components folder.</p>
 
-		<p>The javascript files to be tested, should be included in the "index.html". 
+		<p>The javascript files to be tested, should be included in the "index.html".
 		The javascript tests are created in the "test.js" file.
-		This setup is used in the basament online example.</p>
+		This setup is used in the basement online example.</p>
 
 		<div><img src="img/setup.png"></img></div>
 
@@ -81,15 +67,14 @@
 		This file should contain these things:</p>
 		<ul>
 			<li>Start a set of tests.</li>
-			<li>Connect the "test" button to trigger execution of tests.</li>
 			<li>Create any number of tests.</li>
 			<li>On each test, perform any number of checks.</li>
 		</ul>
-		
+
 
 		<h3>Start a set</h3>
 
-		<p>The first step is to start a set of tests. This set the top bar title of 
+		<p>The first step is to start a set of tests. This set the top bar title of
 		the html view, and clear any previous reported tests.</p>
 		<!--
 		<div class="code">
@@ -98,7 +83,7 @@
 		-->
 		<div class="code">
 			<div class="line">
-				<span class="basament">basement</span>
+				<span class="basement">basement</span>
 				<span class="method">.set</span>
 				<span class="parent">(</span>
 				<span class="string"> "a new set of tests" </span>
@@ -106,45 +91,26 @@
 			</div>
 		</div>
 
-		<h3>Connect the "test" button</h3>
-
-		<p>The view has a "test" button that triggers the execution of tests.
-		To connect the test button in the view, to executing your test in the
-		"test.js" file,	assign a callback function to the corresponding 
-		property.</p>
-
-		<div class="code">
-			<div class="line">
-				<span class="basament">basement</span>
-				<span class="method">.test_click</span>
-				<span class="parent">=</span>
-				<span class="string"> exe_tests_function </span>
-			</div>
-		</div>
-		
-		<p>When the test button is pressed, your callback function will be 
-		called. </p>
-		
 		<h3>Create a test</h3>
-		
+
 		<div class="code">
 			<div class="line">
-				<span class="basament">basement</span>
+				<span class="basement">basement</span>
 				<span class="method">.test</span>
 				<span class="parent">(</span>
 				<span class="string"> "first test" </span>
 				<span class="parent">)</span>
 			</div>
 		</div>
-		
+
 		<p>This will return a test object. The test object has only one method,
-		the "check" method, that is used to checks boolean expressions. You 
+		the "check" method, that is used to checks boolean expressions. You
 		can call the "check" method any number of times, as the test may require.
 		Each check method returns the same test object, so they can be chained:</p>
 
 			<div class="code">
 				<div class="line">
-					<span class="basament">basement</span>
+					<span class="basement">basement</span>
 					<span class="method">.test</span>
 					<span class="parent">(</span>
 					<span class="string"> "a simple test" </span>
@@ -179,21 +145,21 @@
 
 		<h3>Perform more tests</h3>
 
-		<p>Create as many test as required, and perform as many checks on them 
-		as required. The html view get progressively updated, as the tests are 
+		<p>Create as many test as required, and perform as many checks on them
+		as required. The html view get progressively updated, as the tests are
 		being created and checks are performed.</p>
 
 		<h2>Online examples</h2>
-		
-		<div><a class="blue_link" href="sample">basic example</a></div>
-		<div><a class="blue_link" href="http://nzonbi.github.com/blue-tree">blue tree: tree data structure in javascript</a></div>
-		
+
+		<div><a class="blue_link" href="sample/">basic example</a></div>
+		<div><a class="blue_link" href="http://lignixz.github.com/blue-tree">blue tree: tree data structure in javascript</a></div>
+
 
 		<h2>Basement Reference</h2>
 
 
 
-		<h4>basament</h4>
+		<h4>basement</h4>
 			<div class="def">The basement "module" object</div>
 
 
@@ -202,33 +168,33 @@
 			from the html view. Reset the test results counters to zero.</div>
 
 		<h4>basement.test_click</h4>
-			<div class="def">Assign a function to this property, that will be 
+			<div class="def">Assign a function to this property, that will be
 			called when the "test" button in the view is clicked.</div>
 
 
 		<h4><div>basement.test( test_name )</div>
 		<div>basement.test( test_name, notes )</div></h4>
-			<div class="def">Creates and return a "test object". Sets the test name. A test item 
-			is placed in the view. If "notes" parameter is given, places 
+			<div class="def">Creates and return a "test object". Sets the test name. A test item
+			is placed in the view. If "notes" parameter is given, places
 			"notes" text below the text name in the view.</div>
 
 
 		<h4>test_object</h4>
-			<div class="def">Each "test objects" represent a test to be performed. They are 
+			<div class="def">Each "test objects" represent a test to be performed. They are
 			created with the "basement.test(..." method. A test_object is
-			connected with the html view, and will update its status in the 
+			connected with the html view, and will update its status in the
 			view each time a "check" (check method) is performed.</div>
 
 
 		<h4><div>test_object.check( check_name, boolean_expr )</div>
 		<div>test_object.check( check_name, boolean_expr, notes )</div></h4>
 			<div class="def">Perform a check. If "boolean_expr" evals to true, the check is passed.
-			If all the checks from a test object are passed, the test is 
+			If all the checks from a test object are passed, the test is
 			passed. If at least one check fails, the test is failed.
 			The view is updated on each check performed.
-			If the optional parameter "notes" is given, the "notes" text is 
+			If the optional parameter "notes" is given, the "notes" text is
 			placed in the view along the test name.</div>
-		
+
 	</div>
 
 
@@ -237,7 +203,7 @@
 	</div>
 
 	<div id="mid_bar"></div>
-	
+
 
 </body>
 </html>

@@ -1,5 +1,5 @@
-body{ 
-	font: 16px Verdana, sans-serif; 
+body{
+	font: 16px Verdana, sans-serif;
 	margin: 0px;
 	background-color: #dbeacc;
 	color: #181a12;
@@ -35,7 +35,7 @@ h4 {
 	top: 0px;
 	right: 0px;
 	height: 80px;
-	
+
 	background-image: linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
@@ -57,7 +57,7 @@ h4 {
 	top: 80px;
 	right: 0px;
 	height: 16px;
-	
+
 	background-image: linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
@@ -115,9 +115,9 @@ h4 {
 	position:absolute;
 	width: 70px;
 	height: 70px;
-	background: #b6d989; 
-	-moz-border-radius: 35px; 
-	-webkit-border-radius: 35px; 
+	background: #b6d989;
+	-moz-border-radius: 35px;
+	-webkit-border-radius: 35px;
 	border-radius: 35px;
 }
 
@@ -134,7 +134,7 @@ h4 {
 	top: 24px;
 	width: 90px;
 	text-align: center;
-	
+
 }
 #link3 {
 	position:absolute;
@@ -195,7 +195,7 @@ a.blue_link:hover {
 .code .tab {
 	padding-left: 60px;
 }
-.code .line .basament{
+.code .line .basement{
 	color: #099884;
 }
 .code .line .method{
@@ -213,4 +213,3 @@ a.blue_link:hover {
 .code .line .string{
 	color: #81b219;
 }
-

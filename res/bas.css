@@ -1,5 +1,5 @@
-body{ 
-	font: 16px Verdana, sans-serif; 
+body{
+	font: 16px Verdana, sans-serif;
 	margin: 0px;
 	background-color: #dbeacc;
 	color: #181a12;
@@ -30,7 +30,7 @@ h3 {
 	top: 0px;
 	right: 0px;
 	height: 200px;
-	
+
 	background-image: linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(106,154,54) 0%, rgb(38,60,15) 100%);
@@ -44,7 +44,7 @@ h3 {
 	color-stop(0, rgb(106,154,54)),
 	color-stop(1, rgb(38,60,15))
 	);
-	
+
 }
 
 #mid_bar {
@@ -53,7 +53,7 @@ h3 {
 	top: 200px;
 	right: 0px;
 	height: 80px;
-	
+
 	background-image: linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(135,156,115) 0%, rgb(41,49,33) 100%);
@@ -111,9 +111,9 @@ h3 {
 	position:absolute;
 	width: 70px;
 	height: 70px;
-	background: #b6d989; 
-	-moz-border-radius: 35px; 
-	-webkit-border-radius: 35px; 
+	background: #b6d989;
+	-moz-border-radius: 35px;
+	-webkit-border-radius: 35px;
 	border-radius: 35px;
 }
 
@@ -130,7 +130,7 @@ h3 {
 	top: 24px;
 	width: 90px;
 	text-align: center;
-	
+
 }
 #link3 {
 	position:absolute;
@@ -205,7 +205,7 @@ a.blue_link:hover {
 .code .tab {
 	padding-left: 60px;
 }
-.code .line .basament{
+.code .line .basement{
 	color: #099884;
 }
 .code .line .method{
@@ -254,7 +254,7 @@ a.blue_link:hover {
 	text-shadow: #667537 -1px -1px 0px;
 	cursor: hand;
 	cursor: pointer;\
-	
+
 	background-image: linear-gradient(bottom, rgb(13,143,106) 0%, rgb(145,222,195) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(13,143,106) 0%, rgb(145,222,195) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(13,143,106) 0%, rgb(145,222,195) 100%);
@@ -274,7 +274,7 @@ a.blue_link:hover {
 	box-shadow: #00775e 6px 6px 0px;
 	top: 49px;
 	left: 19px;
-	
+
 	background-image: linear-gradient(bottom, rgb(42,159,110) 0%, rgb(177,231,207) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(42,159,110) 0%, rgb(177,231,207) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(42,159,110) 0%, rgb(177,231,207) 100%);
